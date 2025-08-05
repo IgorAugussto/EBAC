@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <div>
+      <header>
+        <h1>
+          Sua Voz no Transporte: Melhore o Transporte Público da Sua Cidade
+        </h1>
+        <p>
+          Ajude a melhorar o transporte público! Compartilhe sua opinião e
+          sugestões sobre ônibus, metrô ou trem da sua cidade
+        </p>
+      </header>
+    </div>
+
+    <!-- Seção -->
+    <div>
+      <section>
+        <article>
+          <h3>Por que sua opinião importa?</h3>
+          <p>Sua experiência no transporte público pode ajudar a identificar
+            problemas e propor melhorias. Queremos ouvir você!</p>
+          <p>Juntos, podemos tornar o transporte mais rápido, seguro e
+            confortável.</p>
+        </article>
+        <article>
+          <h3>Como funciona?</h3>
+          <p>É rápido e fácil! Basta responder algumas perguntas sobre sua
+            experiência e sugerir melhorias.</p>
+        </article>
+        <article>
+          <h3>Impacto das sugestões</h3>
+          <p>Suas sugestões serão enviadas à prefeitura e à empresa de transporte
+            para análise.</p>
+          <p>Graças a feedbacks, a linha 123 agora tem mais ônibus nos horários
+            de pico.</p>
+        </article>
+      </section>
+    </div>
+    <!-- Formulário -->
+    <div>
+      <form class= "formulario" action="">
+        <label class= "formulario" for="Tipo de Transporte">Tipo de Transporte</label>
+        <select name="Tipo de Transporte" id="Tipo de Transporte">
+          <option value="onibus">Ônibus</option>
+          <option value="metro">Metrô</option>
+          <option value="trem">Trem</option>
+          <option value="outro">Outro</option>
+        </select>
+
+        <label class= "formulario" for="Linha ou rota usada">Linha ou Rota Usada</label>
+        <input
+          type="text"
+          id="Linha ou rota usada"
+          name="Linha ou rota usada"
+          placeholder="Ex: Linha 123, Rota A"
+        />
+
+        <label class= "formulario" for="Principais Problemas">Principais Problemas</label>
+        <select name="Principais Problemas" id="Principais Problemas">
+          <option value="lotação">Lotação</option>
+          <option value="atrasos">Atrasos</option>
+          <option value="limpeza">Limpeza</option>
+          <option value="segurança">Segurança</option>
+          <option value="outro">Outro</option>
+        </select>
+
+        <label class= "formulario" for="Sugestoes">Sugestoes</label>
+        <input type="text" id="Sugestoes" name="Sugestoes" placeholder="Ex: Mais ônibus, Melhor limpeza"/>
+
+      </form>
+    </div>
+    <!-- Botão -->
+    <div>
+      <button class="botao" type="submit">Enviar</button>
+      <button type="reset">Limpar Formulário</button>
+    </div>
+    <!-- Rodapé -->
+    <div>
+      <p>Projeto criado por Igor Augusto para melhorar o transporte público.</p>
+    </div>
+  </body>
+</html>
