@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games Adivinhador</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Clique no botão "Gerar Número" para tentar adivinhar com base das dicas</h1>
+  </header>
+  <main>
+    <section>
+      <h3>Intruções:</h3>
+      <p>abaixo você vera o símbolo "?" e tera 3 chances para tentar adivinha um número de 1 a 100 com base nas dicas que irão aparecer</p>
+    </section>
+    <section>
+      <button id="generateNumberButton" onclick="gerarNumeroAleatorio()">Gerar Número</button>
+      <input type="number" id="guessInput" placeholder="Digite seu palpite" min="1" max="100">
+      <p id="numberHint"></p>
+      <button id="submitGuessButton" onclick="Chutar()">Chutar</button>
+    </section>
+  </main>
+  
+</body>
+</html>
