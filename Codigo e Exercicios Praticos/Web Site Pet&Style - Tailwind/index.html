@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet&Style</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <span class="text-2xl font-bold text-primary">Pet&Style</span>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-8">
+          <a
+            href="#inicio"
+            class="text-gray-800 hover:text-primary transition-colors"
+            >Início</a
+          >
+          <a
+            href="#produtos"
+            class="text-gray-800 hover:text-primary transition-colors"
+            >Produtos</a
+          >
+          <a
+            href="#depoimentos"
+            class="text-gray-800 hover:text-primary transition-colors"
+            >Depoimentos</a
+          >
+          <a
+            href="#contato"
+            class="text-gray-800 hover:text-primary transition-colors"
+            >Contato</a
+          >
+        </nav>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <!-- "checkbox hack" -->
+          <input type="checkbox" id="menu-toggle" class="hidden peer" />
+          <label
+            for="menu-toggle"
+            class="cursor-pointer text-gray-800 hover:text-primary"
+          >
+            <!-- Ícone hamburguer -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 peer-checked:hidden"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+            <!-- Ícone X -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 hidden peer-checked:block"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </label>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div
+        class="hidden peer-checked:block md:hidden px-2 pt-2 pb-3 space-y-1 bg-white border-t"
+        id="mobile-menu"
+      >
+        <a
+          href="#inicio"
+          class="block px-3 py-2 text-gray-800 hover:text-primary"
+          >Início</a
+        >
+        <a
+          href="#produtos"
+          class="block px-3 py-2 text-gray-800 hover:text-primary"
+          >Produtos</a
+        >
+        <a
+          href="#depoimentos"
+          class="block px-3 py-2 text-gray-800 hover:text-primary"
+          >Depoimentos</a
+        >
+        <a
+          href="#contato"
+          class="block px-3 py-2 text-gray-800 hover:text-primary"
+          >Contato</a
+        >
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <div class="min-h-screen bg-background">
+      <!-- Header -->
+      <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center h-16">
+            <div class="flex items-center">
+              <span class="text-2xl font-bold text-primary">Pet&Style</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+              <a
+                href="#inicio"
+                class="text-foreground hover:text-primary transition-colors"
+                >Início</a
+              >
+              <a
+                href="#produtos"
+                class="text-foreground hover:text-primary transition-colors"
+                >Produtos</a
+              >
+              <a
+                href="#depoimentos"
+                class="text-foreground hover:text-primary transition-colors"
+                >Depoimentos</a
+              >
+              <a
+                href="#contato"
+                class="text-foreground hover:text-primary transition-colors"
+                >Contato</a
+              >
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section
+        id="inicio"
+        class="pt-16 bg-gradient-to-br from-primary/5 to-secondary/5"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 class="text-4xl lg:text-6xl font-bold text-foreground mb-6">
+                Estilo e Conforto para seu Pet
+              </h1>
+              <p class="text-lg text-muted-foreground mb-8">
+                Na Pet&Style, oferecemos produtos de alta qualidade que combinam
+                funcionalidade e design para proporcionar o máximo de conforto e
+                estilo para seu companheiro de quatro patas.
+              </p>
+              <button
+                class="bg-primary text-primary-foreground px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors"
+              >
+                Ver Produtos
+              </button>
+            </div>
+            <div class="relative">
+              <div class="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+                <img
+                  src="https://images.unsplash.com/photo-1577611612259-3c222e97c514?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                  alt="Pet com acessórios elegantes"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products Section -->
+      <section id="produtos" class="py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+              Nossos Produtos
+            </h2>
+            <p class="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Descubra nossa seleção cuidadosa de produtos premium para pets,
+              combinando qualidade, durabilidade e design moderno.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Produto 1 -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <img
+                src="./img/photo-1619682488107-c0791e9be98d.jpeg"
+                alt="Coleira estilosa"
+                class="w-full h-48 object-cover rounded-md mb-4"
+              />
+              <h3 class="text-lg font-semibold mb-2">Coleira Estilosa</h3>
+              <p class="text-muted-foreground mb-4">
+                Coleira confortável e cheia de estilo para seu pet.
+              </p>
+              <span class="text-primary font-bold">R$ 79,90</span>
+              <button class="ml-12 mt-4 px-4 py-2 bg-blue-600 text-black rounded-lg hover:bg-blue-700 cursor-pointer">
+                Comprar
+              </button>
+            </div>
+            <!-- Produto 2 -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <img
+                src="./img/cama-aconchegante.jpeg"
+                alt="Cama aconchegante"
+                class="w-full h-48 object-cover rounded-md mb-4"
+              />
+              <h3 class="text-lg font-semibold mb-2">Cama Aconchegante</h3>
+              <p class="text-muted-foreground mb-4">
+                A melhor cama para seu pet descansar com conforto.
+              </p>
+              <span class="text-primary font-bold">R$ 199,90</span>
+              <button
+                class="ml-12 mt-4 px-4 py-2 bg-blue-600 text-black rounded-lg hover:bg-blue-700 cursor-pointer"
+              >
+                Comprar
+              </button>
+            </div>
+            <!-- Produto 3 -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <img
+                src="./img/brinquedo-divertido.jpeg"
+                alt="Brinquedo divertido"
+                class="w-full h-48 object-cover rounded-md mb-4"
+              />
+              <h3 class="text-lg font-semibold mb-2">Brinquedo Divertido</h3>
+              <p class="text-muted-foreground mb-4">
+                Diversão garantida para seu pet brincar o dia todo.
+              </p>
+              <span class="text-primary font-bold">R$ 49,90</span>
+              <button class="ml-12 mt-4 px-4 py-2 bg-blue-600 text-black rounded-lg hover:bg-blue-700 cursor-pointer">
+                Comprar
+              </button>
+            </div>
+            <!-- Produto 4 -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <img
+                src="./img/acessorio-gato.jpeg"
+                alt="Acessório para gatos"
+                class="w-full h-48 object-cover rounded-md mb-4"
+              />
+              <h3 class="text-lg font-semibold mb-2">Acessório para Gatos</h3>
+              <p class="text-muted-foreground mb-4">
+                Kit completo de acessórios elegantes especialmente para felinos.
+              </p>
+              <span class="text-primary font-bold">R$ 129,90</span>
+              <button class="ml-12 mt-4 px-4 py-2 bg-blue-600 text-black rounded-lg hover:bg-blue-700 cursor-pointer">
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="depoimentos" class="py-16 lg:py-24 bg-secondary/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+              O que nossos clientes dizem
+            </h2>
+            <p class="text-lg text-muted-foreground">
+              Veja os depoimentos de quem confia na Pet&Style
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Depoimento 1 -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <div class="flex mb-4 text-yellow-400">★★★★★</div>
+              <p class="text-muted-foreground mb-4 italic">
+                "Produtos incríveis, meu cachorro adorou a nova cama!"
+              </p>
+              <p class="font-semibold text-foreground">- Carlos Silva</p>
+            </div>
+            <!-- Depoimento 2 -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <div class="flex mb-4 text-yellow-400">★★★★★</div>
+              <p class="text-muted-foreground mb-4 italic">
+                "Atendimento excelente e entrega super rápida."
+              </p>
+              <p class="font-semibold text-foreground">- João Santos</p>
+            </div>
+            <!-- Depoimento 3 -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <div class="flex mb-4 text-yellow-400">★★★★★</div>
+              <p class="text-muted-foreground mb-4 italic">
+                "Variedade de produtos e qualidade impecável."
+              </p>
+              <p class="font-semibold text-foreground">- Maria Oliveira</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contato" class="py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+              Entre em Contato
+            </h2>
+            <p class="text-lg text-muted-foreground">
+              Estamos aqui para ajudar você e seu pet
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Contact Info -->
+            <div>
+              <h3 class="text-xl font-semibold text-foreground mb-6">
+                Informações de Contato
+              </h3>
+              <div class="space-y-4">
+                <div class="flex items-center">
+                  <span class="w-5 h-5 text-primary mr-3">📞</span>
+                  <span class="text-muted-foreground">(11) 9999-8888</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="w-5 h-5 text-primary mr-3">✉️</span>
+                  <span class="text-muted-foreground"
+                    >contato@petstyle.com.br</span
+                  >
+                </div>
+                <div class="flex items-center">
+                  <span class="w-5 h-5 text-primary mr-3">📍</span>
+                  <span class="text-muted-foreground"
+                    >Rua dos Pets, 123 - São Paulo, SP</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div>
+              <form class="space-y-6">
+                <div>
+                  <label
+                    for="name"
+                    class="block text-sm font-medium text-foreground mb-2"
+                    >Nome</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    class="w-full px-3 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary bg-input-background"
+                    placeholder="Seu nome"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-foreground mb-2"
+                    >E-mail</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="w-full px-3 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary bg-input-background"
+                    placeholder="seu.email@exemplo.com"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="message"
+                    class="block text-sm font-medium text-foreground mb-2"
+                    >Mensagem</label
+                  >
+                  <textarea
+                    id="message"
+                    rows="4"
+                    class="w-full px-3 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary bg-input-background"
+                    placeholder="Sua mensagem..."
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="w-full bg-primary text-primary-foreground py-2 px-4 rounded-md hover:bg-primary/90 transition-colors"
+                >
+                  Enviar Mensagem
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-primary text-primary-foreground py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center">
+            <h3 class="text-2xl font-bold mb-4">Pet&Style</h3>
+            <p class="text-primary-foreground/80">
+              © 2024 Pet&Style. Todos os direitos reservados.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
