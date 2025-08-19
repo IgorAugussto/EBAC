@@ -1,0 +1,8 @@
+$card {
+  grid-column: span 12;
+  background: var(--card);
+  border: 1px solid #ffffff10;
+  border-radius: 16px;
+  padding: 1.1rem 1.2rem;
+  box-shadow: 0 10px 28px #00000033, inset 0 1px 0 #ffffff12;
+}

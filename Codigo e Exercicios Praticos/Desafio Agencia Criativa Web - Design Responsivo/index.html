@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agência Criativa Web</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="header">
+    <div class="container header__wrap">
+      <!-- “Logo” simples em texto (pode trocar por imagem quando quiser) -->
+      <a href="#home" class="logo" aria-label="Agência Criativa Web">
+        <span class="logo__mark">AC</span>
+        <span class="logo__text">Agência Criativa <strong>Web</strong></span>
+      </a>
+
+      <!-- Menu mobile (checkbox hack, sem JS) -->
+      <input type="checkbox" id="nav-toggle" class="nav__toggle" aria-label="Abrir menu" />
+      <label for="nav-toggle" class="nav__btn" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav" aria-label="Menu principal">
+        <ul class="nav__list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home / Banner -->
+  <section id="home" class="banner">
+    <div class="container banner__content">
+      <div class="banner__content">
+        <h1 class="banner__content banner__content--textHead">Design digital que impulsiona sua marca.</h1>
+        <p class="banner__content banner__content--textParagraph">Sites modernos, identidades marcantes e experiências que convertem — tudo com foco em performance e responsividade.</p>
+        <a href="#servicos" class="btn">Conheça nossos serviços</a>
+      </div>
+
+      <!-- Imagem responsiva (troque pelos seus arquivos) -->
+      <picture class="banner__media">
+        <!-- Exemplos de imagens (substitua por arquivos reais do seu projeto) -->
+        <source srcset="banner-1200.jpg 1200w, banner-800.jpg 800w, banner-480.jpg 480w" sizes="(min-width: 960px) 50vw, 90vw" />
+        <img src="banner-800.jpg" alt="Equipe de design trabalhando em interfaces" loading="lazy" />
+      </picture>
+    </div>
+  </section>
+
+  <!-- Sobre Nós -->
+  <section id="sobre" class="about">
+    <div class="container about__content">
+      <div class="about__content">
+        <h2 class="about__content about__content--textHead">Sobre Nós</h2>
+        <p class="about__content about__content--textParagraph">
+          Somos a <strong>Agência Criativa Web</strong>, especialistas em design digital e desenvolvimento front-end. Unimos estética, estratégia e tecnologia para levar sua marca ao próximo nível.
+        </p>
+        <ul class="about__values">
+          <li class="about__items">Design centrado no usuário</li>
+          <li class="about__items">Performance e acessibilidade</li>
+          <li class="about__items">Transparência e parceria</li>
+        </ul>
+      </div>
+      <figure class="about__media">
+        <img
+          src="sobre-640.jpg"
+          srcset="sobre-320.jpg 320w, sobre-640.jpg 640w, sobre-960.jpg 960w"
+          sizes="(min-width: 960px) 40vw, 90vw"
+          alt="Protótipos e paleta de cores em mesa de trabalho"
+          loading="lazy"
+        />
+      </figure>
+    </div>
+  </section>
+
+  <!-- Serviços (Grid) -->
+  <section id="servicos" class="service">
+    <div class="container service__content">
+      <h2 class="service__content service__content--textHead">Serviços</h2>
+      <div class="service__grid">
+        <article class="card">
+          <h3 class="card__text--head">Design Gráfico</h3>
+          <p class="card__text--paragraph">Identidades visuais, materiais de marca e artes para social media.</p>
+        </article>
+        <article class="card">
+          <h3 class="card__text--head">Desenvolvimento Web</h3>
+          <p class="card__text--paragraph">Sites responsivos com foco em SEO, acessibilidade e performance.</p>
+        </article>
+        <article class="card">
+          <h3>UI/UX</h3>
+          <p class="card__text--paragraph">Wireframes, protótipos e testes com usuários para maximizar conversão.</p>
+        </article>
+        <article class="card">
+          <h3 class="card__text--head">Branding</h3>
+          <p class="card__text--paragraph">Posicionamento, voz de marca e diretrizes de comunicação.</p>
+        </article>
+        <article class="card">
+          <h3 class="card__text--head">Landing Pages</h3>
+          <p class="card__text--paragraph">Páginas otimizadas para captação de leads e campanhas.</p>
+        </article>
+        <article class="card">
+          <h3 class="card__text--head">Manutenção</h3>
+          <p class="card__text--paragraph">Suporte contínuo, otimizações e melhorias evolutivas.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section id="depoimentos" class="brief">
+    <div class="container brief__content">
+      <h2 class="brief__content brief__content--textHead">Depoimentos</h2>
+      <div class="brief__list">
+        <blockquote class="attest">
+          <p class="attest__paragraph">“A equipe transformou nossa presença digital. Crescemos 40% em leads.”</p>
+          <cite class="attest__name">— Carla Mendes, CMOsis</cite>
+        </blockquote>
+        <blockquote class="depo">
+          <p>“Processo claro, prazos cumpridos e visual impecável. Recomendo!”</p>
+          <cite>— João Pereira, LumenTech</cite>
+        </blockquote>
+        <blockquote class="depo">
+          <p>“Nosso site ficou rápido e lindo no celular. Experiência top.”</p>
+          <cite>— Marina Souza, Estúdio MS</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="contato">
+    <div class="container contato__wrap">
+      <div class="contato__info">
+        <h2>Contato</h2>
+        <p><strong>Endereço:</strong> Rua Criativa, 123 — São Paulo, SP</p>
+        <p><strong>Telefone:</strong> (11) 99999-0000</p>
+        <p><strong>E-mail:</strong> contato@agenciacriativaweb.com</p>
+      </div>
+
+      <form class="contato__form" action="#" method="post">
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" placeholder="Seu nome" required />
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" placeholder="seu@email.com" required />
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como podemos ajudar?" required></textarea>
+
+        <button type="submit" class="btn">Enviar mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__wrap">
+      <p>© <span id="year"></span> Agência Criativa Web — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Apenas atualiza o ano no rodapé (sem afetar layout/CRUD)
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
